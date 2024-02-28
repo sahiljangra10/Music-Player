@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.music-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(50, 47, 47);
+}
+
+.music-player{
+  width: 300px;
+  height: 420px;
+  background-color: rgb(240, 205, 234);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px white;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons button{
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: rgb(243, 7, 152);
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgb(231, 77, 211);
+}
+
+
+.music-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:200px;
+  margin-top: 25px;
+}
+
+.music-info img{
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.song-details{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  margin-top: -15px;
+}
+
+#play-arrow{
+  transform: scale(1.5);
+  border: none;
+  outline: 0;
+}
+
+.controls button{
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.color-pink{
+  background-color: rgb(243, 7, 152);
+  color: white;
+  box-shadow: 0px 0px 5px rgb(165, 164, 165);
+}
+
+.color-white{
+  background-color: white;
+  color: rgb(243, 7, 152);
+  box-shadow: 0px 0px 5px rgb(231, 77, 211);
+}
+
+.song{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.song audio{
+  border: none;
+}
+
+#progress{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #f53192;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px 0;
+  outline: 0;
+}
+
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}

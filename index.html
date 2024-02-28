@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <div class="music-container">
+      <div class="music-player">
+        <div class="buttons">
+          <button id="arrow"><span class="material-symbols-outlined">
+            chevron_left
+            </span></button>
+          <button id="drop-down"><span class="material-symbols-outlined">
+            menu
+            </span></button>
+        </div>
+        <div class="music-info">
+          <img src="468-thumbnail.png" alt="artist-image">
+          <div class="song-details">
+            <div>Daspactio</div>
+            <div>Loius fonsi Singer</div>
+          </div>
+        </div>
+        <div class="song">
+          <audio id="sing">
+            <source src="Despacito(PagalWorld).mp3" type="audio/ogg">
+          </audio>
+        </div>
+        <input type="range" value="0" id="progress" max="281">
+        <div class="controls">
+          <button class="color-white" id="fast-rewind">
+            <span  class="material-symbols-outlined">
+              fast_rewind
+            </span>
+          </button>
+          <button onclick="playSong();" class="color-pink" id="play-arrow">
+            <span id="playIcon" class="material-symbols-outlined">
+              play_arrow
+            </span>
+          </button>
+          <!-- <button class="color-pink" id="pause-circle" >
+            <span class="material-symbols-outlined">
+              pause_circle
+            </span>
+          </button> -->
+          <button class="color-white" id="fast-forward">
+            <span  class="material-symbols-outlined">
+              fast_forward
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
